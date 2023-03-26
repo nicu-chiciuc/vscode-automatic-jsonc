@@ -2,10 +2,13 @@
   "name": "automatic-jsonc",
   "displayName": "automatic-jsonc",
   "description": "Automatically convert package.jsonc to package.json.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.76.0"
   },
+
+  // This is the new line
+  "icon": "icon.png",
   "categories": ["Other"],
   "repository": {
     "type": "git",
