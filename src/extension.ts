@@ -14,18 +14,6 @@ function stripCommentsAndUpdatePackageJson(document: vscode.TextDocument) {
 
 export function activate(context: vscode.ExtensionContext) {
   const outputChannel = vscode.window.createOutputChannel("automatic-jsonc");
-  outputChannel.appendLine(
-    'Congratulations, your extension "automatic-jsonc" is now active!'
-  );
-
-  let disposable = vscode.commands.registerCommand(
-    "automatic-jsonc.helloWorld",
-    () => {
-      vscode.window.showInformationMessage("Hello World from automatic-jsonc!");
-    }
-  );
-
-  context.subscriptions.push(disposable);
 
   context.subscriptions.push(
     vscode.workspace.onDidSaveTextDocument(stripCommentsAndUpdatePackageJson)
