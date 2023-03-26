@@ -2,7 +2,7 @@
   "name": "automatic-jsonc",
   "displayName": "automatic-jsonc",
   "description": "Automatically convert package.jsonc to package.json.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.76.0"
   },
