@@ -2,7 +2,7 @@
   "name": "automatic-jsonc",
   "displayName": "automatic-jsonc",
   "description": "Automatically convert package.jsonc to package.json.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -19,7 +19,19 @@
   "activationEvents": ["onLanguage:jsonc"],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": []
+    "configuration": {
+      "title": "Automatic JSONC",
+      "properties": {
+        "automatic-transform-jsonc": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": ["**/package.jsonc"],
+          "description": "Glob patterns of files to automatically convert from JSONC to JSON."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
