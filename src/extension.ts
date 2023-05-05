@@ -5,7 +5,9 @@ import * as micromatch from "micromatch";
 
 function processJsoncFiles(document: vscode.TextDocument) {
   const config = vscode.workspace.getConfiguration();
-  const patterns = config.get<string[]>("automatic-transform-jsonc");
+  const patterns = config.get<string[]>(
+    "automatic-jsonc.jsoncFilesToTransform"
+  );
 
   if (
     patterns &&

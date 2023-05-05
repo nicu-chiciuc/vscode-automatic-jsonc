@@ -16,7 +16,7 @@ There are no additional requirements to use this extension. However, you will ne
 
 This extension includes the following configurable setting:
 
-* `automatic-transform-jsonc`: An array of glob patterns for files to automatically convert from JSONC to JSON. Default value is `["**/package.jsonc"]`.
+* `automatic-jsonc.jsoncFilesToTransform`: An array of glob patterns for files to automatically convert from JSONC to JSON. Default value is `["**/package.jsonc"]`.
 
 ## Known Issues
 
@@ -26,7 +26,7 @@ There are no known issues at the moment. If you encounter any issues, please rep
 
 ### 0.1.0
 
-- Added user-facing configuration option "automatic-transform-jsonc" to allow specifying an array of glob patterns for files that should be automatically converted from JSONC to JSON.
+- Added user-facing configuration option "automatic-jsonc.jsoncFilesToTransform" to allow specifying an array of glob patterns for files that should be automatically converted from JSONC to JSON.
 
 ### 0.0.1
 

@@ -1,7 +1,7 @@
 {
   "name": "automatic-jsonc",
   "displayName": "automatic-jsonc",
-  "description": "Automatically convert package.jsonc to package.json.",
+  "description": "Automatically convert package.jsonc to package.json. Or any other JSONC file.",
   "version": "0.0.4",
   "engines": {
     "vscode": "^1.76.0"
@@ -22,7 +22,7 @@
     "configuration": {
       "title": "Automatic JSONC",
       "properties": {
-        "automatic-transform-jsonc": {
+        "automatic-jsonc.jsoncFilesToTransform": {
           "type": "array",
           "items": {
             "type": "string"
